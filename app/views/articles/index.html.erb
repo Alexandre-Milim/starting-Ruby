@@ -1,0 +1,14 @@
+<h1>Articles</h1>
+
+<ul>  <!-- e pra exibir um comando ruby usa o % % -->
+    <% @articles.each do |article| %> <!-- each do ruby, é como um while ou for -->
+        <li>
+            <%= article.title %><!-- pra exibir dentro da li tive de colocar o " = "  aqui ele esta pegando o article criado, no caso foi milim, pra criar um articles vai la pra baixo-->
+            <%= article.body%> 
+        </li>
+    <% end %> 
+</ul>
+<!-- pra vc criar uma nova artcile abre com rails c-->
+<!-- Variavel = Article.new(title: 'Testandoo') -->
+<!-- pra vc salvar vc coloc o nome da variavel.save -->
+<!-- articles é ome da tabela que criou com o scaffold, pra ver ela melhor va em "schema.rb"  -->
